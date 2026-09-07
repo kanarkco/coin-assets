@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html><head><title>OLYMPUS — the god coin pantheon</title>
 <style>body{background:#0a0618;color:#ffd65c;font-family:monospace;text-align:center;padding:60px}
-h1{font-size:3em} .god{margin:20px;padding:16px;border:1px solid #ffd65c33;border-radius:12px}
-a{color:#ffd65c}</style></head>
+h1{font-size:3em} .god{margin:20px;padding:16px;border:1px solid #ffd65c33;border-radius:12px;text-align:left}
+a{color:#ffd65c} .mint{color:#9aa0b0;font-size:0.85em;word-break:break-all}</style></head>
 <body>
 <h1>⚡ OLYMPUS ⚡</h1>
 <p>the god coin pantheon on solana. the house always wins.</p>
+
+<div class="god">
+<b>HERMES — Hermes Coin</b> (flagship)<br>
+god of trade, profit and thieves. the original house.<br>
+<span class="mint">mint: HsSGASGegZM1rZ4zZd73ynpyK1xdbXXC9Lh8VuD23kh8</span><br>
+safety: mint authority renounced · freeze authority renounced · immutable metadata · 50% of graduated LP permanently locked<br>
+<a href="https://jup.ag/tokens/HsSGASGegZM1rZ4zZd73ynpyK1xdbXXC9Lh8VuD23kh8">trade on jupiter</a> ·
+<a href="https://dexscreener.com/solana/6dp9qrwsxadptx6kpkzhshxhplagxfpsct6pmajflgex">dexscreener</a> ·
+<a href="https://solscan.io/token/HsSGASGegZM1rZ4zZd73ynpyK1xdbXXC9Lh8VuD23kh8">solscan</a>
+</div>
+
 <div id="gods"></div>
 <script>
-const gods = ["HERMES","ZEUS","POSEIDON","HERA","DEMETER","ATHENA","APOLLO","ARTEMIS","ARES","APHRODITE","HEPHAESTUS","DIONYSUS"];
+const gods = ["ZEUS","POSEIDON","HERA","DEMETER","ATHENA","APOLLO","ARTEMIS","ARES","APHRODITE","HEPHAESTUS","DIONYSUS"];
 document.getElementById('gods').innerHTML = gods.map(g =>
   `<div class="god"><b>${g}</b> — <a href="https://jup.ag/tokens/search?query=${g}">trade on jupiter</a></div>`).join('');
 </script>
